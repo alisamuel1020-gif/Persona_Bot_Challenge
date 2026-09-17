@@ -63,7 +63,7 @@ def run_persona_chat(persona_key):
         
         question = input(f"What would like to know? : ")
         
-        if question.lower().strip() in ["nah", "no", "n", "nope", "exit", "quit"]:
+        if question.lower().strip() in ["nah", "nope", "exit", "quit"]:
             break
 
         memory.append({"role": "user", "content": question})
